@@ -1,0 +1,127 @@
+.switch .disLabel{
+  cursor: inherit;
+}
+
+
+.modalBtn{
+    margin-top: -45px;
+    margin-left: 5px;
+}
+
+.accountBtn{
+  margin-top: 10px;
+  margin-right: 10px;
+  border-radius: 60px;
+  height: 64px;
+  width: 64px;
+}
+
+.button-collapse {
+  color: #26a69a;
+}
+
+@media only screen and (max-width: 448px){
+  #indexImage{
+    display: none;
+  }
+}
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+body{
+ background-color:#DCDCDC;
+}
+
+footer{
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.87);
+  width: 100%;
+  height: 56px;
+  line-height: 56px; }
+
+footer ul li:hover, footer ul li.active, footer ul li a:hover, footer ul li a.active {
+  color: #fff;
+  background-color: #1ABC9C; }
+
+a{
+  color:#1ABC9C;
+}
+
+.section{
+  padding-top: 120px; 
+  padding-left: 40px;
+}
+
+#delete_button{
+background-color: #e53935;
+}
+
+#logo{
+ color: white;
+ font-size:2rem
+}
+.logo{
+  text-align: center;
+}
+
+.indent{
+  list-style: none;
+}
+
+hr{
+  width: 50%;
+}
+
+.leftNav{
+  left: 250px;
+  position: absolute;
+  text-align: center;
+}
+
+.leftBody{
+  left: 270px;
+  right: 30px;
+  width:80%;
+  position: relative;
+  text-align: center;
+}
+
+strong{
+      font-weight: 700;
+}
+
+table{
+  background-color: white;
+}
+
+.update{
+  background-color:#66bb6a;
+}
+.update:hover{
+  background-color:#43a047;
+}
+
+.delete{
+  background-color:#ef5350;
+}
+.delete:hover{
+  background-color:#e53935;
+}
+
+.side-nav ul{
+  text-align: left;
+}
