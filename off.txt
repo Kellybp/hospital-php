@@ -1,3 +1,4 @@
+Attempt at using obfuscation
 UserName = ZYZTMZaXVz
 Password = sJorxZHtst
 
