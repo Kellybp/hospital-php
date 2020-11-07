@@ -36,7 +36,7 @@ function safety($non){
 	return $safe;
 }
 
-require_once('../Models/user_database.php');
+require_once('../Models/database.php');
 
 $stmt = $db->prepare("UPDATE patients
 SET name = :name, 

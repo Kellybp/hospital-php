@@ -7,7 +7,7 @@
 <div id="modal3" class="modal">
    <?php
       if(isset($_SESSION['uname'])){
-      	echo " <form class='col s9' action='../employeeManager/update_employee.php' method='POST' id='update_employee_form'>
+      	echo " <form class='col s9' action='../Models/employeeManager/update_employee.php' method='POST' id='update_employee_form'>
        <input id='updateId' type='hidden' name='updateId' value=''/>
        <input type='hidden' id='updateCW' name='updateCurrentlyWorking'>
        <div class='modal-content'>

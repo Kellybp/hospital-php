@@ -5,10 +5,10 @@
  if($_SESSION['type'] != 'admin') {
          header('Location: ../index.php');
       }    
-  include("../Models/header.php");
+  include("../Models/view_components/header.php");
   
   if(isset($_SESSION['uname'])){
-	require_once("../Models/user_database.php");
+	require_once("../Models/database.php");
 	$queryBegin = 'SELECT * FROM Employees WHERE Employee_Types = ';
 	$queryEnd = 'ORDER BY Employee_FName';
 	$medQuery = 'SELECT * FROM medications';
@@ -24,9 +24,9 @@
   } else{
   	$empDoc = "0";
   }
-  	include("../Models/nav.php");
-  	include("../Models/sidebar.php");
-  	include("../Models/modal.php");
+	  include("../Models/view_components/nav.php");
+  	include("../Models/view_components/sidebar.php");
+  	include("../Models/view_components/modal.php");
   	include("../Models/addModals/medication_add.php");
   	include("../Models/addModals/allergy_add.php");
   	include("../Models/updateModals/admin_um.php");
@@ -35,10 +35,12 @@
   	include("../Models/addModals/admin_add.php");
 ?>
 <p class="leftNav">
+	
 	<p>
 		<br/>
 		<br/>
 		<div class="leftBody">
+		<p class="warning red">You are about to be logged off</p>
 			<div id="doc" style="display:none;">
 				<table class="striped">
 					<thead>
@@ -298,6 +300,7 @@
 					</tbody>
 				</table>
 			</div>
+			<?php include("../Models/view_components/logoutTimer.php") ?>
 		</div>
 	</p>
 </p>
@@ -340,4 +343,4 @@
 		}
 	}
 	</script>
-<?php include("../Models/footer.php"); ?>
+<?php include("../Models/view_components/footer.php"); ?>

@@ -1,5 +1,5 @@
 <?php
- include("Models/indexHeader.php");
+ include("Models/view_components/indexHeader.php");
 
  if(!isset($_SESSION)) {
          session_start();
@@ -39,4 +39,4 @@
       </div>
    </div>
 </div>
-<?php include("Models/indexfooter.php"); ?>
+<?php include("Models/view_components/indexfooter.php"); ?>

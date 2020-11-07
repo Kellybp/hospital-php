@@ -2,7 +2,7 @@
 	if(!isset($_SESSION)) {
 		header('Location: ../index.php');
 	   }
-	include("../../Models/viewHeader.php"); 
+	include("../../Models/view_components/viewHeader.php"); 
 ?>
 <div class="hero-image">
    <div class="hero-text">

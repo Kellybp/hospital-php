@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.3
+-- version 4.8.5
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Apr 19, 2019 at 12:29 AM
--- Server version: 5.7.23
--- PHP Version: 7.2.10
+-- Generation Time: Nov 07, 2020 at 07:44 PM
+-- Server version: 5.7.26
+-- PHP Version: 7.2.18
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `opensource`
+-- Database: `assignment4login`
 --
 
 -- --------------------------------------------------------
@@ -108,20 +108,20 @@ CREATE TABLE IF NOT EXISTS `employees` (
   `Employee_Password` varchar(60) NOT NULL DEFAULT 'Password',
   PRIMARY KEY (`EmployeeID`),
   UNIQUE KEY `Employee_UserName` (`Employee_UserName`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `employees`
 --
 
 INSERT INTO `employees` (`EmployeeID`, `Employee_Types`, `Employee_CurrentlyWorking`, `Employee_FName`, `Employee_LName`, `Employee_ContactNum`, `Employee_UserName`, `Employee_Password`) VALUES
-(1, 'doc', 1, 'Bob', 'Kelly', '(716)375-5233', 'bob', '$2y$10$iXCs865uVp2kWmHavWG7RuUeAqHmwtGGLivCAu8OuJPCmnxPaCyT.'),
-(3, 'admin', 1, 'bobby', 'bobby', '(984)384-5374', 'b', '$2y$10$/niNLG57QSu6m0EZWoc9kOp.FlR5ECQ.TQhDBtn/uCOP7CHz8iHLe'),
-(4, 'rec', 1, 'f', 'f', '4', 'f', '$2y$10$lFPBTcQia0ryVmVKMJm0jekwifjGspFYkSFvAWoBLDWfpbCgtWCqC'),
+(1, 'doc', 1, 'Bob', 'Boberton', '(716)375-5233', 'bob', '$2y$10$iXCs865uVp2kWmHavWG7RuUeAqHmwtGGLivCAu8OuJPCmnxPaCyT.'),
 (5, 'nurse', 1, 'Billy', 'billi', 'somethign', 'bibi', '$2y$10$1OlcP8Pg.r7oIw5SsHjASeazs4XtfsTal1ohDirXEmgCS5O91lDPC'),
 (7, 'doc', 1, 'billy', 'billy', 'billy', 'billy', '$2y$10$BODWF19D/zElP5hpGxdAX.bpXQEmMpml.6zweC.G7hFI9Ly1ApB.a'),
-(8, 'nurse', 1, 'dsf', 'sdf', 'sdf', 'sdf', '$2y$10$.zFz8iO3Mf92XnMnBJeTdeWcP16sjlKkDHVOMKfJGLGd9nqVvDKn2'),
-(9, 'rec', 1, 'r', 'r', 'r', 'r', '$2y$10$U4KCv47jYNMx1ESyWpYj/.0BKSPzQY9EG6AKTN.nzf0F2fX2wOuCm');
+(10, 'doc', 1, 'Doc', 'Doc', '123', 'Doc', '$2y$10$4IPcVdNkclogNVJxkdgo4.oGktDPjLQz8m1l0hpOx5.jq78r6cf4G'),
+(14, 'nurse', 1, 'Hello', 'Nurse', '123', 'Nurse', '$2y$10$pWm3y2ORRVKqSvEmGj7CFOYfHPOZn256BVoqwGTRinfMAGQNs5IIC'),
+(15, 'rec', 1, 'Rec', 'Rec', '123', 'Rec', '$2y$10$5ea0Lk8ifV2eIYy9uyDNMu2FeWxrT/TZfceMtwWKjFJ4/KS/wdBT6'),
+(16, 'admin', 1, 'admin', 'admin', '123', 'admin', '$2y$10$RftuZAlc9t0ZEKbIkawdf.ui5.ofyO.Ij2qGSRURXUhJepIRBCyuq');
 
 -- --------------------------------------------------------
 

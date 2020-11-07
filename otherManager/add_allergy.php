@@ -17,7 +17,7 @@ if(empty($safeName)){
 header('Location: ../views/admin_index.php');
 }
 
-require_once('../models/user_database.php');
+require_once('../models/database.php');
 $stmt = $db->prepare("INSERT INTO allergies (name)
 			VALUES (:name)");
 

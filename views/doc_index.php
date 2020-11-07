@@ -5,10 +5,10 @@
  if($_SESSION['type'] != 'doc') {
          header('Location: ../index.php');
       }    
-  include("../Models/header.php");
+  include("../Models/view_components/header.php");
   
   if(isset($_SESSION['uname'])){
-	require_once("../Models/user_database.php");
+	require_once("../Models/database.php");
 	//Appointments beyond present
 	$query = "SELECT * FROM appointments as a
 			INNER JOIN records as r ON a.apptID = r.apptID
@@ -19,15 +19,17 @@
 	$appointments = $db->query($query);
 	}
   
-  	include("../Models/nav.php");
-  	include("../Models/sidebar.php");
-  	include("../Models/modal.php");
+	  include("../Models/view_components/nav.php");
+  	include("../Models/view_components/sidebar.php");
+  	include("../Models/view_components/modal.php");
 ?>
 <p class="leftNav">
 	<p>
 		<br/>
 		<br/>
 		<div class="leftBody">
+<p class="warning red">You are about to be logged off</p>
+
 			<?php if ($appointments != "0"){
 					foreach($appointments as $appointment) : ?>
 				<form action='../patientManager/update_patient.php' method='POST' id='update_patient_form'>
@@ -122,7 +124,8 @@
 			<br>
 
 			<?php endforeach;} ?>
+			<?php include("../Models/view_components/logoutTimer.php") ?>
 		</div>
 	</p>
 </p>
-<?php include("../Models/footer.php"); ?>
+<?php include("../Models/view_components/footer.php"); ?>

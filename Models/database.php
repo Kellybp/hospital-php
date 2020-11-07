@@ -5,9 +5,9 @@ if(!isset($_SESSION)) {
 	header('Location: ../index.php');
    }
     
-	$dsn = 'mysql:host=localhost;dbname=opensource';
-	$user = 'root';
-	$pass = '';
+	$dsn = 'mysql:host=localhost;dbname=DATABASETABLENAME';
+	$user = 'USERNAME';
+	$pass = 'PASSWORD';
 
 	try {
 		$db = new PDO($dsn, $user, $pass);

@@ -1,8 +1,10 @@
 <?php
 
  if(!isset($_SESSION)) {
-         session_start();
-      }
+	 //Closes session on page close
+	session_set_cookie_params(0);	 
+	session_start();
+	  }
 
 $user = trim(filter_var($_POST['uname'], FILTER_SANITIZE_STRING));
 $safeUser = preg_replace('/[^A-Za-z0-9\-]/', '', $user);
@@ -20,14 +22,14 @@ if(strlen($safeUser) > 30 ||  strlen($safeUser) > 30){
 	$userName =  $user['Employee_UserName'];
 	$passwordVerify = password_verify($safePass, $user['Employee_Password']);
 	$type = $user['Employee_Types'];
-	endforeach;
-
+	endforeach;	
 	$location = "../../views/";
-
 	if(isset($_SESSION['uname'])){
 		unset($db);
-		echo 'here';
-		echo $_SESSION['uname'];
+		// echo 'here';
+		// echo $_SESSION['uname'];
+		// echo $_SESSION['type'];		
+		// echo location($location);
 		header('Location: '.location($location));
 	}
 	else{
@@ -35,7 +37,7 @@ if(strlen($safeUser) > 30 ||  strlen($safeUser) > 30){
 			$_SESSION['uname'] = $userName;
 			$_SESSION['type'] = $type;
 			unset($db);
-			echo 'here1';
+			echo location($location);
 			header('Location: '.location($location));
 		}
 		else{

@@ -15,7 +15,7 @@ if(empty($safeName)){
  $safeName = "blank";
 }
 
-require_once('../Models/user_database.php');
+require_once('../Models/database.php');
 
 $stmt = $db->prepare("UPDATE medications
 			SET name = :name

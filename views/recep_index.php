@@ -5,10 +5,10 @@
  if($_SESSION['type'] != 'rec') {
          header('Location: ../index.php');
       }    
-  include("../Models/header.php");
+  include("../Models/view_components/header.php");
   
   if(isset($_SESSION['uname'])){
-	require_once("../Models/user_database.php");
+	require_once("../Models/database.php");
 	$pQuery = 'SELECT * FROM patients';
 	$aQuery = "SELECT * FROM appointments WHERE date_time >= NOW()  
 				AND record_type = 'Other'
@@ -18,15 +18,17 @@
 	$as = $db->query($aQuery);
 
   } 
-  	include("../Models/nav.php");
-  	include("../Models/sidebar.php");
-  	include("../Models/modal.php");
+	  include("../Models/view_components/nav.php");
+  	include("../Models/view_components/sidebar.php");
+  	include("../Models/view_components/modal.php");
 ?>
 <p class="leftNav">
+
 	<p>
 		<br/>
 		<br/>
 		<div class="leftBody">
+		<p class="warning red">You are about to be logged off</p>
 			<div id="pats">
 				<?php if ($ps != "0"){
 						foreach($ps as $pss) : ?>
@@ -97,6 +99,7 @@
 			</div>
 		</div>
 	</p>
+	<?php include("../Models/view_components/logoutTimer.php") ?>
 </p>
 <div>
 	<div class="fixed-action-btn" id="newPatient" style="display:none;">
@@ -106,4 +109,4 @@
 	</div>
 </div>
    
-<?php include("../Models/footer.php"); ?>
+<?php include("../Models/view_components/footer.php"); ?>
