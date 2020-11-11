@@ -19,10 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d905b900-f5f6-47b0-a250-94e54b20bd48" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="d905b900-f5f6-47b0-a250-94e54b20bd48" name="Default Changelist" comment="Adding gitignore">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Permissions/models/index.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +40,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Collaboration-723/ihni" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -59,7 +57,8 @@
       <option name="presentableId" value="Default" />
       <updated>1604777974557</updated>
       <workItem from="1604777975643" duration="2440000" />
-      <workItem from="1604780443663" duration="182000" />
+      <workItem from="1604780443663" duration="257000" />
+      <workItem from="1604970383718" duration="19000" />
     </task>
     <task id="LOCAL-00001" summary="Added automatic logout functionalities &#10;========================================&#10;Logout after 1 minute on inactivity&#10;Logout on tab/page close&#10;&#10;&#10;===============================================&#10;Added README.MD&#10;Outlined username and passwords">
       <created>1604780401141</created>
@@ -68,7 +67,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604780401141</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Adding gitignore">
+      <created>1604780645922</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1604780645922</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -89,16 +95,21 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added automatic logout functionalities &#10;========================================&#10;Logout after 1 minute on inactivity&#10;Logout on tab/page close" />
     <MESSAGE value="Added automatic logout functionalities &#10;========================================&#10;Logout after 1 minute on inactivity&#10;Logout on tab/page close&#10;&#10;&#10;===============================================&#10;Added README.MD&#10;Outlined username and passwords" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added automatic logout functionalities &#10;========================================&#10;Logout after 1 minute on inactivity&#10;Logout on tab/page close&#10;&#10;&#10;===============================================&#10;Added README.MD&#10;Outlined username and passwords" />
+    <MESSAGE value="Adding gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding gitignore" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1604780407135">
+    <state x="739" y="294" key="FileChooserDialogImpl" timestamp="1604970401143">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.1080.1280.720/0.0.1920.1080/1920.16.1680.1050@0.0.1920.1080" timestamp="1604780407135" />
-    <state x="667" y="139" width="585" height="801" key="find.popup" timestamp="1604778042589">
+    <state x="739" y="294" key="FileChooserDialogImpl/0.1080.1280.720/0.0.1920.1080/1920.16.1680.1050@0.0.1920.1080" timestamp="1604970401143" />
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1604780693954">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="667" y="139" width="585" height="801" key="find.popup/0.1080.1280.720/0.0.1920.1080/1920.16.1680.1050@0.0.1920.1080" timestamp="1604778042589" />
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.1080.1280.720/0.0.1920.1080/1920.16.1680.1050@0.0.1920.1080" timestamp="1604780693954" />
+    <state x="667" y="139" width="585" height="801" key="find.popup" timestamp="1604780688782">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="667" y="139" width="585" height="801" key="find.popup/0.1080.1280.720/0.0.1920.1080/1920.16.1680.1050@0.0.1920.1080" timestamp="1604780688782" />
   </component>
 </project>
